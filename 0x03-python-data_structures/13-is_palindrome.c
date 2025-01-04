@@ -8,10 +8,11 @@
 
 int is_palindrome(listint_t **head)
 {
-	if (!*head || !(**head).next)
-		return (1);
 	listint_t *first;
 	int n, re;
+
+	if (!*head || !(**head).next)
+		return (1);
 
 	first = *head, n = first->n;
 	while (first->next->next)
